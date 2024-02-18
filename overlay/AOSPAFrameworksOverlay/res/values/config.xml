@@ -41,6 +41,18 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
     </string-array>
 
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>PRODUCT:TA-1041_00CN</item>
+        <item>DEVICE:C1N</item>
+        <item>MANUFACTURER:FIH</item>
+        <item>BRAND:Nokia"</item>
+        <item>MODEL:TA-1041</item>
+        <item>FINGERPRINT:Nokia/TA-1041_00CN/C1N:7.1.1/NMF26F/00CN_0_430:user/release-keys"</item>
+        <item>SECURITY_PATCH:2017-10-01</item>
+        <item>FIRST_API_LEVEL:25</item>
+        <item>BUILD_ID:NMF26F</item>
+    </string-array>
+
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 
