@@ -125,6 +125,12 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 
+#Lawnchair
+ifneq ($(TARGET_USES_LAWNCHAIR), true)
+PRODUCT_COPY_FILES += \
+   $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+endif
+
 # Microsoft
 $(call inherit-product, vendor/aospa/prebuilt/microsoft/packages.mk)
 
