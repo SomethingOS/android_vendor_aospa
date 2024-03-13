@@ -12,19 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# Handle various build version information.
-#
-# Guarantees that the following are defined:
-#     AOSPA_MAJOR_VERSION
-#     AOSPA_MINOR_VERSION
-#     AOSPA_BUILD_VARIANT
-#
-
 # This is the global AOSPA version flavor that determines the focal point
 # behind our releases. This is bundled alongside $(AOSPA_MINOR_VERSION)
 # and only changes per major Android releases.
-AOSPA_MAJOR_VERSION := uvite
+AOSPA_MAJOR_VERSION := 14
 
 # The version code is the upgradable portion during the cycle of
 # every major Android release. Each version code upgrade indicates
@@ -35,28 +26,11 @@ ifdef AOSPA_BUILDVERSION
     AOSPA_MINOR_VERSION := $(AOSPA_BUILDVERSION)
 endif
 
-# Build Variants
-#
-# Alpha: Development / Test releases
-# Beta: Public releases with CI
-# Stable: Final Product | No Tagging
-ifdef AOSPA_BUILDTYPE
-  ifeq ($(AOSPA_BUILDTYPE), ALPHA)
-      AOSPA_BUILD_VARIANT := alpha
-  else ifeq ($(AOSPA_BUILDTYPE), BETA)
-      AOSPA_BUILD_VARIANT := beta
-  else ifeq ($(AOSPA_BUILDTYPE), STABLE)
-      AOSPA_BUILD_VARIANT := stable
-  endif
-else
-  AOSPA_BUILD_VARIANT := unofficial
-endif
-
 # Build Date
 BUILD_DATE := $(shell date -u +%Y%m%d)
 
 # AOSPA Version
-AOSPA_VERSION := $(AOSPA_MAJOR_VERSION)-
+AOSPA_VERSION := $(AOSPA_MAJOR_VERSION)
 AOSPA_DISPLAY_VERSION := $(shell V1=$(AOSPA_MAJOR_VERSION); echo -n $${V1^})
 
 ifeq ($(filter stable,$(AOSPA_BUILD_VARIANT)),)
