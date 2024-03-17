@@ -42,15 +42,13 @@
     </string-array>
 
     <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>PRODUCT:TA-1041_00CN</item>
-        <item>DEVICE:C1N</item>
-        <item>MANUFACTURER:FIH</item>
-        <item>BRAND:Nokia"</item>
-        <item>MODEL:TA-1041</item>
-        <item>FINGERPRINT:Nokia/TA-1041_00CN/C1N:7.1.1/NMF26F/00CN_0_430:user/release-keys"</item>
-        <item>SECURITY_PATCH:2017-10-01</item>
-        <item>FIRST_API_LEVEL:25</item>
-        <item>BUILD_ID:NMF26F</item>
+        <item>MANUFACTURER:motorola</item>
+        <item>BRAND:motorola</item>
+        <item>DEVICE:griffin</item>
+        <item>PRODUCT:griffin_retcn</item>
+        <item>MODEL:XT1650-05</item>
+        <item>FINGERPRINT:motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys</item>
+        <item>SECURITY_PATCH:2016-07-01</item>
     </string-array>
 
     <!-- True if home app should be pinned via Pinner Service -->
