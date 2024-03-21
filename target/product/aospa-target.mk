@@ -115,6 +115,10 @@ SYSTEMUI_OPTIMIZE_JAVA := true
 #Lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
+#Material Files
+PRODUCT_PACKAGES += \
+    MaterialFiles
+
 # Microsoft
 $(call inherit-product, vendor/aospa/prebuilt/microsoft/packages.mk)
 
