@@ -132,9 +132,6 @@ $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 PRODUCT_PACKAGES += \
     MaterialFiles
 
-# Microsoft
-$(call inherit-product, vendor/aospa/prebuilt/microsoft/packages.mk)
-
 # MTE
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.arm64.memtag.system_server=off
