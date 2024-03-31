@@ -22,5 +22,7 @@ allow hub_app cache_recovery_file:file create_file_perms;
 allow hub_app ota_package_file:dir create_dir_perms;
 allow hub_app ota_package_file:file create_file_perms;
 
+allow hub_app vendor_tcmd:unix_stream_socket connectto;
+
 get_prop(hub_app, default_prop)
 get_prop(hub_app, build_prop)

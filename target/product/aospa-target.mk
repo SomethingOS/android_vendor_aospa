@@ -260,7 +260,14 @@ PRODUCT_PACKAGES += \
     libtextclassifier_annotator_en_model \
     libtextclassifier_annotator_universal_model \
     libtextclassifier_actions_suggestions_universal_model \
-    libtextclassifier_lang_id_model
+    libtextclassifier_lang_id_model\
+
+# Updater
+PRODUCT_PACKAGES += \
+    Updater \
+    update_engine \
+    update_verifier \
+    update_engine_sideload
 
 # Volume panel dialog - SystemUI
 PRODUCT_SYSTEM_EXT_PROPERTIES += \

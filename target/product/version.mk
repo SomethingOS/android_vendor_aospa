@@ -17,13 +17,24 @@
 # and only changes per major Android releases.
 AOSPA_MAJOR_VERSION := 14
 
+SOMETHINGOS_VERSION := 1.0
+
 # The version code is the upgradable portion during the cycle of
 # every major Android release. Each version code upgrade indicates
 # our own major release during each lifecycle.
 # It is based in three parts
 # X for SPL changes, Y for week, and Z for hotfix.
+
 ifdef AOSPA_BUILDVERSION
-    AOSPA_MINOR_VERSION := $(AOSPA_BUILDVERSION)
+    AOSPA_MINOR_VERSION := $(SOMETHINGOS_VERSION)
+endif
+
+ifdef AOSPA_BUILDTYPE
+    ifeq ($(AOSPA_BUILDTYPE), BETA)
+        AOSPA_BUILD_VARIANT := beta
+    else
+        AOSPA_BUILD_VARIANT := stable
+    endif
 endif
 
 # Build Date
@@ -40,6 +51,10 @@ else
     AOSPA_VERSION += $(AOSPA_MINOR_VERSION)-
     AOSPA_DISPLAY_VERSION += $(AOSPA_MINOR_VERSION)
 endif
+
+# Updater version
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.somethingos.version=$(SOMETHINGOS_VERSION)
 
 # Add BUILD_DATE for zip naming
 AOSPA_VERSION += $(AOSPA_BUILD)-$(BUILD_DATE)
