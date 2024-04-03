@@ -27,6 +27,26 @@ function checkExit () {
     fi
 }
 
+generate_json() {
+    TIMESTAMP=$(unzip -p SomethingOS-${AOSPA_VERSION}.zip META-INF/com/android/metadata | grep 'post-timestamp=' | cut -d '=' -f 2)
+    MD5_HASH=$(md5sum SomethingOS-${AOSPA_VERSION}.zip | awk '{print $1}')
+    cat <<EOF > generated_${DEVICE}.json
+{
+  "response": [
+    {
+      "timestamp": "${TIMESTAMP}",
+      "filename": "SomethingOS-${AOSPA_VERSION}.zip",
+      "id": "${MD5_HASH}",
+      "size": "$(stat -c%s SomethingOS-${AOSPA_VERSION}.zip)",
+      "url": "https://example.com/path/to/SomethingOS-${AOSPA_VERSION}.zip",
+      "version": ""
+    }
+  ]
+}
+EOF
+}
+
+
 # Output usage help
 function showHelpAndExit {
         echo -e "${CLR_BLD_BLU}Usage: $0 <device> [options]${CLR_RST}"
@@ -174,7 +194,7 @@ fi
 TIME_START=$(date +%s.%N)
 
 # Friendly logging to tell the user everything is working fine is always nice
-echo -e "${CLR_BLD_GRN}Building AOSPA $AOSPA_DISPLAY_VERSION for $DEVICE${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Building SomethingOS for $DEVICE${CLR_RST}"
 echo -e "${CLR_GRN}Start time: $(date)${CLR_RST}"
 echo -e ""
 
@@ -259,6 +279,7 @@ elif [ "$FLAG_IMG_ZIP" = 'y' ]; then
     ota_from_target_files \
         "$OUT"/obj/PACKAGING/target_files_intermediates/aospa_$DEVICE-target_files-$FILE_NAME_TAG.zip \
         SomethingOS-$AOSPA_VERSION.zip
+    generate_json
 
     checkExit
 
@@ -276,6 +297,7 @@ else
 
     cp -f $OUT/aospa_$DEVICE-ota-$FILE_NAME_TAG.zip $OUT/SomethingOS-$AOSPA_VERSION.zip
     echo "Package Complete: $OUT/SomethingOS-$AOSPA_VERSION.zip"
+    generate_json
 fi
 echo -e ""
 
