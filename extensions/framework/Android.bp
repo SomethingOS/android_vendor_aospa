@@ -17,5 +17,6 @@ android_library {
     srcs: ["src/**/*.java"],
     static_libs: [
         "androidx.preference_preference",
+        "SettingsLibMainSwitchPreference",
     ],
 }
