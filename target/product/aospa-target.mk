@@ -264,10 +264,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
 
-# WallMan
-PRODUCT_PACKAGES += \
-    WallMan
-
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client
