@@ -44,11 +44,11 @@
     <string-array name="config_certifiedBuildProperties" translatable="false">
         <item>MANUFACTURER:motorola</item>
         <item>BRAND:motorola</item>
-        <item>DEVICE:griffin</item>
-        <item>PRODUCT:griffin_retcn</item>
-        <item>MODEL:XT1650-05</item>
-        <item>FINGERPRINT:motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys</item>
-        <item>SECURITY_PATCH:2016-07-01</item>
+        <item>DEVICE:clark</item>
+        <item>PRODUCT:clark_retus</item>
+        <item>MODEL:XT1575</item>
+        <item>FINGERPRINT:motorola/clark_retus/clark:6.0/MPHS24.49-18-8/4:user/release-keys</item>
+        <item>SECURITY_PATCH:2016-09-01</item>
     </string-array>
 
     <!-- True if home app should be pinned via Pinner Service -->
