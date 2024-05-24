@@ -41,16 +41,6 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
     </string-array>
 
-    <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>MANUFACTURER:motorola</item>
-        <item>BRAND:motorola</item>
-        <item>DEVICE:clark</item>
-        <item>PRODUCT:clark_retus</item>
-        <item>MODEL:XT1575</item>
-        <item>FINGERPRINT:motorola/clark_retus/clark:6.0/MPHS24.49-18-8/4:user/release-keys</item>
-        <item>SECURITY_PATCH:2016-09-01</item>
-    </string-array>
-
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 
