@@ -43,9 +43,6 @@ $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
-# Certification
-$(call inherit-product, vendor/something/certification/certification.mk)
-
 # curl
 PRODUCT_PACKAGES += \
     curl
