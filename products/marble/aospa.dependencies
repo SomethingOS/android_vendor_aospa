@@ -1,20 +1,20 @@
 [
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_marble",
+        "remote":       "github",
+        "repository":   "Chaitanyakm/device_xiaomi_marble-somethingOS",
         "target_path":  "device/xiaomi/marble",
         "revision":     "uvite"
     },
     {
-        "remote":       "aospa",
+        "remote":       "github",
         "repository":   "AOSPA/android_device_xiaomi_marble-kernel",
         "target_path":  "device/xiaomi/marble-kernel",
         "revision":     "uvite",
         "clone-depth":  "1"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_sm8450-common",
+        "remote":       "github",
+        "repository":   "Chaitanyakm/device_xiaomi_sm8450-common-somethingOS",
         "target_path":  "device/xiaomi/sm8450-common",
         "revision":     "uvite"
     },
@@ -67,8 +67,8 @@
         "revision":     "uvite-8450"
     },
     {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_xiaomi",
+        "remote":       "github",
+        "repository":   "Chaitanyakm/vendor_xiaomi-somethingOS",
         "target_path":  "vendor/xiaomi",
         "revision":     "uvite",
         "clone-depth":  "1"
