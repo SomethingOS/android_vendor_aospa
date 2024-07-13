@@ -42,13 +42,13 @@
     </string-array>
 
     <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>MANUFACTURER:Google</item>
-        <item>BRAND:google</item>
-        <item>DEVICE:sailfish</item>
-        <item>PRODUCT:sailfish</item>
-        <item>MODEL:Pixel</item>
-        <item>FINGERPRINT:google/sailfish/sailfish:8.1.0/OPM1.171019.011/4448085:user/release-keys</item>
-        <item>SECURITY_PATCH:2017-12-05</item>
+        <item>MANUFACTURER:asus</item>
+        <item>BRAND:asus</item>
+        <item>DEVICE:ASUS_I001_1</item>
+        <item>PRODUCT:CN_I001D</item>
+        <item>MODEL:ASUS_I001DA</item>
+        <item>FINGERPRINT:asus/CN_I001D/ASUS_I001_1:9/PKQ1.190414.001/16.0621.1906.12-0:user/release-keys</item>
+        <item>SECURITY_PATCH:2019-06-05</item>
     </string-array>
 
     <!-- True if home app should be pinned via Pinner Service -->
