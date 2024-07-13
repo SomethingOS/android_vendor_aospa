@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     IconShapeSquircleOverlay \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
-    IconShapeVesselOverlay
+    IconShapeVesselOverlay \
+    RoundQSOverlay
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static

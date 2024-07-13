@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LeafOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="custom_qs_tile_label_line_height">16sp</dimen>
+    <dimen name="custom_qs_panel_padding_top">20dp</dimen>
+    <dimen name="custom_notification_row_padding">0dp</dimen>
+    <dimen name="qs_tile_height">96dp</dimen>
+    <dimen name="qs_tile_margin_horizontal">22dp</dimen>
+    <dimen name="qs_footer_height">72dp</dimen>
+    <dimen name="qs_customize_internal_side_paddings">6dp</dimen>
+    <dimen name="qs_label_container_margin">6dp</dimen>
+    <dimen name="qs_quick_tile_size">55dp</dimen>
+    <dimen name="qs_tile_padding">18dp</dimen>
+    <dimen name="qs_tile_text_size">12sp</dimen>
+
+    <!-- QQS Brightness slider -->
+    <dimen name="qqs_top_brightness_margin_top">-12dp</dimen>
+    <dimen name="qqs_top_brightness_margin_bottom">30dp</dimen>
+    <dimen name="qqs_bottom_brightness_margin_top">8dp</dimen>
+
+    <!-- QS Brightness slider -->
+    <dimen name="qs_top_brightness_margin_bottom">25dp</dimen>
+    <dimen name="qs_bottom_brightness_margin_top">20dp</dimen>
+</resources>

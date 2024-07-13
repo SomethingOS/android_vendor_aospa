@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LeafOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <integer name="quick_settings_max_rows">3</integer>
+    <integer name="quick_qs_panel_max_rows">1</integer>
+    <integer name="quick_qs_panel_num_columns">5</integer>
+    <integer name="quick_qs_panel_num_columns_landscape">6</integer>
+    <integer name="quick_qs_panel_num_columns_media">4</integer>
+    <integer name="quick_qs_panel_max_tiles">5</integer>
+    <integer name="qs_panel_num_columns">4</integer>
+    <integer name="qs_panel_num_columns_landscape">6</integer>
+    <integer name="qs_panel_num_columns_media">4</integer>
+</resources>
