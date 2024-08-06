@@ -16,7 +16,7 @@ CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
 # Set defaults
-BUILD_TYPE="userdebug"
+BUILD_TYPE="user"
 
 function checkExit () {
     EXIT_CODE=$?
