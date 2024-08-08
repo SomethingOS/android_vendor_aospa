@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 SomethingOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <dimen name="qs_so_header_layout_height">68dp</dimen>
+     <dimen name="qs_so_header_layout_expanded_top_margin">8dp</dimen>
+
+     <dimen name="qs_so_header_layout_margin_top">16dp</dimen>
+     <dimen name="qs_so_header_layout_margin_bottom">24dp</dimen>
+     <dimen name="qs_so_header_layout_corner_radius">23dp</dimen>
+
+</resources>

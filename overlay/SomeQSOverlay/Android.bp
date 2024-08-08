@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2024 SomethingOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+runtime_resource_overlay {
+    name: "SomeQSOverlay",
+    theme: "SomeQS",
+    product_specific: true,
+}
