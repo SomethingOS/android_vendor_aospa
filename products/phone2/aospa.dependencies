@@ -1,7 +1,7 @@
 [
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_nothing_phone2",
+        "remote":       "something-devices-prv",
+        "repository":   "android_device_nothing_phone2",
         "target_path":  "device/nothing/phone2",
         "revision":     "uvite"
     },
