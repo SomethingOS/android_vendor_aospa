@@ -189,6 +189,13 @@ def main():
             for attr in removed_attrs:
                 del existing.attrib[attr]
 
+            # Handle children elements
+            for child in list(existing):
+                existing.remove(child)
+
+            for child in project:
+                existing.append(child)
+
             if updated_attrs or removed_attrs:
                 changes.extend(
                     f"Updated {attr} for ingredient: {name}" for attr in updated_attrs
