@@ -128,7 +128,6 @@ $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 
 # Paranoid Packages
 PRODUCT_PACKAGES += \
-    ParanoidPapers \
     ParanoidSettings \
     ParanoidSystemUI \
     ParanoidThemePicker
