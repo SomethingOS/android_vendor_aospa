@@ -24,16 +24,15 @@
 # This is the global AOSPA version flavor that determines the focal point
 # behind our releases. This is bundled alongside $(AOSPA_MINOR_VERSION)
 # and only changes per major Android releases.
-AOSPA_MAJOR_VERSION := vauxite
+AOSPA_MAJOR_VERSION := 15
+
+SOMETHINGOS_VERSION := 2.0
 
 # The version code is the upgradable portion during the cycle of
 # every major Android release. Each version code upgrade indicates
 # our own major release during each lifecycle.
 # It is based in three parts
 # X for SPL changes, Y for week, and Z for hotfix.
-ifdef AOSPA_BUILDVERSION
-    AOSPA_MINOR_VERSION := $(AOSPA_BUILDVERSION)
-endif
 
 # Build Variants
 #
@@ -63,12 +62,16 @@ ifeq ($(filter stable,$(AOSPA_BUILD_VARIANT)),)
     AOSPA_VERSION += $(AOSPA_BUILD_VARIANT)-
     AOSPA_DISPLAY_VERSION += $(shell V1=$(AOSPA_BUILD_VARIANT); echo -n $${V1^})
 else
-    AOSPA_VERSION += $(AOSPA_MINOR_VERSION)-
-    AOSPA_DISPLAY_VERSION += $(AOSPA_MINOR_VERSION)
+    AOSPA_VERSION += $(SOMETHINGOS_VERSION)-
+    AOSPA_DISPLAY_VERSION += $(SOMETHINGOS_VERSION)
 endif
 
 # Add BUILD_DATE for zip naming
 AOSPA_VERSION += $(AOSPA_BUILD)-$(BUILD_DATE)
+
+# Updater version
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.somethingos.version=$(SOMETHINGOS_VERSION)
 
 # Remove unwanted characters for zip naming
 AOSPA_VERSION := $(shell echo -n $(AOSPA_VERSION) | tr -d '[:space:]')
