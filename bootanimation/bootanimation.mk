@@ -7,7 +7,6 @@
 # Bootanimation
 PRODUCT_COPY_FILES += \
 	vendor/aospa/bootanimation/SomethingOS.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip \
-	vendor/aospa/bootanimation/Fox.zip:$(TARGET_COPY_OUT_PRODUCT)/media/fox.zip \
-	vendor/aospa/bootanimation/Dots.zip:$(TARGET_COPY_OUT_PRODUCT)/media/dots.zip \
-	vendor/aospa/bootanimation/Googlish.zip:$(TARGET_COPY_OUT_PRODUCT)/media/googlish.zip \
-	vendor/aospa/bootanimation/Pixel.zip:$(TARGET_COPY_OUT_PRODUCT)/media/pixel.zip
+	vendor/aospa/bootanimation/Legacy.zip:$(TARGET_COPY_OUT_PRODUCT)/media/legacy.zip \
+	vendor/aospa/bootanimation/Circle.zip:$(TARGET_COPY_OUT_PRODUCT)/media/circle.zip \
+	vendor/aospa/bootanimation/Fox.zip:$(TARGET_COPY_OUT_PRODUCT)/media/fox.zip
