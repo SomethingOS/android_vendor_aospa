@@ -150,7 +150,7 @@ if [ -z "$JOBS" ]; then
 fi
 
 # Grab the build version
-AOSPA_DISPLAY_VERSION="$(cat $DIR_ROOT/vendor/aospa/target/product/version.mk | grep 'AOSPA_MAJOR_VERSION := *' | sed 's/.*= //')"
+AOSPA_DISPLAY_VERSION="$(cat $DIR_ROOT/vendor/aospa/target/product/version.mk | grep 'SOMETHINGOS_VERSION := *' | sed 's/.*= //')"
 if [ $AOSPA_BUILDVERSION ]; then
     AOSPA_DISPLAY_VERSION+="$AOSPA_BUILDVERSION"
 fi
@@ -173,7 +173,7 @@ fi
 TIME_START=$(date +%s.%N)
 
 # Friendly logging to tell the user everything is working fine is always nice
-echo -e "${CLR_BLD_GRN}Building AOSPA $AOSPA_DISPLAY_VERSION for $DEVICE${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Building SomethingOS $AOSPA_DISPLAY_VERSION for $DEVICE${CLR_RST}"
 echo -e "${CLR_GRN}Start time: $(date)${CLR_RST}"
 echo -e ""
 
@@ -245,7 +245,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
         echo -e "${CLR_BLD_BLU}Generating signed fastboot package${CLR_RST}"
         img_from_target_files \
             SomethingOS-$AOSPA_VERSION-signed-target_files.zip \
-            SomethingOS-$AOSPA_VERSION-image.zip
+            SomethingOS-$AOSPA_VERSION-fastboot.zip
         checkExit
     fi
 # Build rom package
