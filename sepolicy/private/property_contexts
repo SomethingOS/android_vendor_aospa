@@ -1,5 +1,5 @@
-# PIHooks
-persist.sys.pihooks.disable.            u:object_r:pih_disable_prop:s0
+# SomeImitationHooks
+persist.sys.sih.                        u:object_r:sih_settings_prop:s0
 
 # Reset Signatures
 ro.persist.sys.signatures.reset         u:object_r:reset_signatures_prop:s0

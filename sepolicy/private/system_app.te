@@ -1,0 +1,3 @@
+# SIHooks
+get_prop(system_app, sih_settings_prop)
+set_prop(system_app, sih_settings_prop)

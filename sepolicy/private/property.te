@@ -1,5 +1,5 @@
-# PIHooks
-system_public_prop(pih_disable_prop)
+# SIHooks
+system_public_prop(sih_settings_prop)
 
 # Reset Signatures
 system_restricted_prop(reset_signatures_prop);

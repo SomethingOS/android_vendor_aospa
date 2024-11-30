@@ -1,1 +1,1 @@
-get_prop(appdomain, pih_disable_prop)
+get_prop(appdomain, sih_settings_prop)
