@@ -12,3 +12,6 @@ lineagehealth                               u:object_r:lineage_health_interface_
 
 # PIH
 pih_manager                                 u:object_r:pih_manager_service:s0
+
+# Lineage global actions
+lineageglobalactions                        u:object_r:lineage_globalactions_service:s0
